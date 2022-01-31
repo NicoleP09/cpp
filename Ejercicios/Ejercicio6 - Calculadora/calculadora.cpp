@@ -22,10 +22,10 @@ int main(int argc, char const *argv[])
 
     //salida
 
-    cout << "La suma de a + b = " << suma;
-    cout << "La resta de a - b = " << resta;
-    cout << "La division de a / b = " << division;
-    cout << "La multiplicacion de a * b = " << multiplicacion;
+    cout << "La suma de a + b = " << suma << endl;
+    cout << "La resta de a - b = " << resta << endl;
+    cout << "La division de a / b = " << division << endl;
+    cout << "La multiplicacion de a * b = " << multiplicacion << endl;
 
 
 
