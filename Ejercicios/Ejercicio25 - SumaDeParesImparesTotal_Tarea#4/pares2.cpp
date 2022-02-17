@@ -24,9 +24,10 @@ int main(int argc, char const *argv[])
 
     cout << endl;
     cout << endl;
-    cout << "Total pares: " << pares << endl;
-    cout << "Total impares: " << impar << endl;
-    cout << "Suma Total: " << total << endl;
+    cout << "  Total pares:   " << pares << endl;
+    cout << "+ Total impares: " << impar << endl;
+    cout << "===================" << endl;
+    cout << "  Suma Total:    " << total << endl;
 
     return 0;
 }
