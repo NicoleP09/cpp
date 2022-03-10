@@ -1,16 +1,24 @@
 #include <iostream>
+#include<stdlib.h>
 
 using namespace std;
 
-double subtotal, total;
+double subtotal, total, ivs;
 string listaProductos;
 
 void agregarProducto(string descripcion, int cantidad, double precio)
 {
     listaProductos = listaProductos + descripcion + '\n';
-    subtotal = subtotal + (cantidad * precio);
-    total = subtotal * .15;
-    total = total + subtotal;
+    total = total + (cantidad * precio);
+
+    /*El precio en la carta de menu ya tenia el IMPUESTO incluido, asi que se lo sacaremos para desenglosar 
+    los montos en orden*/ 
+
+    subtotal = total / 1.15;
+    ivs = total - subtotal;
+    total = subtotal + ivs; 
+
+    
 }
 
 void imprimirFactura()
@@ -25,7 +33,9 @@ void imprimirFactura()
     cout << listaProductos;
 
     cout << endl;
-    cout << "Subtotal: " << total;
+    cout << "Subtotal:      " << subtotal;
+    cout << "IVS 15%:       " << ivs;
+    cout << "Total a Pagar: " << total;
     cout << endl;
     cout << endl;
     system("pause");
