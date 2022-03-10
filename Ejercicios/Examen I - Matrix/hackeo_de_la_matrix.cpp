@@ -1,6 +1,6 @@
 #include <iostream>
 #include <conio.h>
-# include <windows.h>
+#include <windows.h>
 
 using namespace std;
 
@@ -56,8 +56,8 @@ int main() {
 				 ++i;
 			}
 		}		
-	} else
-    {
+	} 
+    
         if (constrasena == "neo" ) {
             system("COLOR 04");
 
@@ -77,6 +77,7 @@ int main() {
 				}
 				std::cout << caRow[i];
 				++i;
+                
 			}
 			j = (j + 31);
 			k = (k + 17);
@@ -113,7 +114,7 @@ int main() {
             cout <<endl; 
 	}
         
-    }
+    
     
 
     return 0;
