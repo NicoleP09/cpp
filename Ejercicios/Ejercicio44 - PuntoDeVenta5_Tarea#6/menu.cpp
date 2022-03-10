@@ -32,6 +32,7 @@ void menu()
 
         if (opcion == 0) 
         {
+            cout << "<< Adiosito, vuelva pronto, vales mil >>" <<endl;
             break;
         }    
         if (opcion == 4)
