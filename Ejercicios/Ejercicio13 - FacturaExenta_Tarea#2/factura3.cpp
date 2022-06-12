@@ -22,14 +22,14 @@ int main(int argc, char const *argv[])
     
     //proceso
 
-    if ( exenta == 's' || exenta == 'S')
+    if ( exenta == 'S' || exenta == 's')
     {
         calculoDescuento = (subtotal * descuento) / 100;
         total = subtotal - calculoDescuento;    
         
     }   else 
         
-        if ( exenta == 'n' || exenta == 'N')
+        if ( exenta == 'N' || exenta == 'n')
     {
         calculoDescuento = (subtotal * descuento) / 100;
         calculoImpuesto = (subtotal - calculoDescuento) * impuesto;
@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
     
     //salida
     cout << endl;
-    cout << "El total a pagar es: " << total;
+    cout << "El total a pagar es: L. " << total;
 
     return 0;
 }

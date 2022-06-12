@@ -5,6 +5,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     //declaracion de variables 
+    
     int a=0, b=0, suma=0, resta=0, multiplicacion=0, division=0;
 
     cout << "\nDigite el valor de a: ";
