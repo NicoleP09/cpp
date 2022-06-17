@@ -11,6 +11,7 @@ int main(int argc, char const *argv[])
         if (i % 2 == 0) {
             pares = pares + i;
         } else
+        
         {
             if ( i % 1 == 0)
             {
