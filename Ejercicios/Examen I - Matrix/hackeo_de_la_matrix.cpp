@@ -57,11 +57,11 @@ int main() {
 			}
 		}		
 	} 
-    
+		
         if (constrasena == "neo" ) {
             system("COLOR 04");
 
-            char caRow[80];
+        char caRow[80];
 		int j = 7;
 		int k = 2;
 		int l = 5;
@@ -71,11 +71,11 @@ int main() {
 			int i = 0;
 			
 			// caracteres aleatorios
-			while (i < 10) {
+			while (i <10) {
 				if (caRow[i] != ' ') {
 					caRow[i] = GetChar(j + i*i, 33, 30);
 				}
-				std::cout << caRow[i];
+				std::cout << caRow[i]; 
 				++i;
                 
 			}
@@ -88,19 +88,18 @@ int main() {
 			caRow[Modulus(l, 80)] = '-';
 			caRow[Modulus(m, 80)] = ' ';
 			
-			// incremente el valor de 3000000 para retrasar el proceso
-			i = 0;
-			while (i < 300000) {
-				GetChar(1, 1, 1);
-				 ++i;
-			}
+
+			Sleep(10); 
 		}
+	
 
         cout <<endl;
 		cout <<endl; 
 		cout << "EL SISTEMA FALLO" <<endl ;
         cout <<endl; 
         cout <<endl; 
+
+		
 
         } else {
             system("COLOR 04");
